@@ -1,9 +1,9 @@
 var mongoose = require("mongoose");
 
 // Connecting to database
-var query = `ongodb+srv://adminprabha:Atlas1234@cluster0.c0uc9.mongodb.net/lamdemodb?retryWrites=true&w=majority`;
+var query = `mongodb+srv://adminprabha:<pwd>@cluster0.c0uc9.mongodb.net/lamdemodb?retryWrites=true&w=majority`;
 
-const db = query;
+const db = process.env.MONGO_URL;
 //mongoose.Promise = global.Promise;
 
 mongoose.connect(

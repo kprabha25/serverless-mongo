@@ -4,14 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/server.js"
+    "start": "nodemon ./src/server.js",
+    "local": "nodemon local.js",
+    "deploy": "serverless deploy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-serverless-express": "^3.4.0",
     "body-parser": "^1.19.1",
     "express": "^4.17.1",
     "mongoose": "^6.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
