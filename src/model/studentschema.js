@@ -10,3 +10,4 @@ var StudentSchema =  mongoose.Schema({
 
 module.exports = mongoose.model(
 	'student', StudentSchema, 'Students');
+

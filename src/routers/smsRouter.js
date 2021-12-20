@@ -40,11 +40,6 @@ router.post("/login", async (req, res) => {
         console.log(er)
 	    res.send({ Error : er})
     })
-
-    // await twilioClient.verify.services(config.twilio.twilio_serviceId)
-    //          .verifications(config.twilio.twilio_serviceId)
-    //          .fetch()
-    //          .then(verification => console.log(verification.status));
 })
 
 router.post("/verify", async (req, res) => {

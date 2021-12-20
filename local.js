@@ -5,3 +5,4 @@ let config = require('./config');
 app.listen(config.app.port, () => {
     console.log(`Listening on: http://localhost:${config.app.port}`);
 });
+
