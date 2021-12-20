@@ -1,11 +1,10 @@
 var mongoose = require("mongoose");
+let config = require('../config');
 
-// Connecting to database
-var query = `mongodb+srv://adminprabha:<pwd>@cluster0.c0uc9.mongodb.net/lamdemodb?retryWrites=true&w=majority`;
-
-const db = process.env.MONGO_URL;
+const db = config.db.MONGO_URL;
 //mongoose.Promise = global.Promise;
 
+// Connecting to database
 mongoose.connect(
   db,
   {

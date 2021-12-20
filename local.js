@@ -1,7 +1,7 @@
 let app = require("./src/server");
-let port = process.env.PORT || 3000;
+let config = require('./config');
 
 // Server
-app.listen(port, () => {
-    console.log(`Listening on: http://localhost:${port}`);
+app.listen(config.app.port, () => {
+    console.log(`Listening on: http://localhost:${config.app.port}`);
 });

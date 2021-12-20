@@ -1,5 +1,6 @@
 http://localhost:3000/api/findall
 https://ybrdghqi3b.execute-api.ap-south-1.amazonaws.com/dev/api/findall
+https://ybrdghqi3b.execute-api.ap-south-1.amazonaws.com/dev/sms?recipient='9884015036',textmessage='Prabha msg'
 
 sls config credentials --provider aws -o --key xxx --secret xxx
 
@@ -34,6 +35,8 @@ Build Secure GraphQL API and Deploy to AWS
 https://rahmanfadhil.com/deploy-graphql-aws-lamda/
 
 https://www.serverless.com/framework/docs/providers/aws/guide/credentials
+
+https://codingsans.com/blog/node-config-best-practices
 -----
 service: serverless-mongo
 
